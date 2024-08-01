@@ -10,7 +10,7 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --light: 85%; /* Lightness value (0-100%) */
+  --light: 65%; /* Lightness value (0-100%) */
 
   --light-grey: hsl(var(--hue), var(--sat), var(--light));
   --title-color: hsl(var(--hue), var(--sat), 20%);
