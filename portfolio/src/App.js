@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
-import Home from './components/Home/Home';
+import Home from './components/Home/Home1';
+import About from './components/About/about';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 
       <main className='main'>
       <Home/>
+      <About/>
       </main>
     </div>
   );
