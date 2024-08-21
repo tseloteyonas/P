@@ -7,7 +7,7 @@ const Works = () => {
     const [item, setItem] = useState({name:"all"});
     const [projects, setProjects] = useState([]);
     const [active, setActive] = useState(0);
-
+// Comment
     useEffect(() => {
         if(item.name === "all") {
             setProjects(projectsData);
