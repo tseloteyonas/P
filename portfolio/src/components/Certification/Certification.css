@@ -1,0 +1,112 @@
+.certification_container {
+    max-width: 768px;
+}
+
+.certification_tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+}
+
+.certification_button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin: 0 var(--mb-1);
+    cursor: pointer;
+}
+
+.certification_button:hover {
+    color: var(--title-color-dark);
+}
+
+.certification_icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.certification_active {
+    color: var(--title-color-dark);
+}
+
+.certification_sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.certification_content-active {
+    display: block;
+}
+
+.certification_data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.certification_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.certification_subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.certification_calendar {
+    font-size: var(--small-font-size);
+}
+
+.certification_rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.certification_line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translate(6px, -7px);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .certification_container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .certification_container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .certification_sections {
+        grid-template-columns: initial;
+    }
+
+    .certification_button {
+        margin: 0 var(--mb-0-75);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .certification_data {
+        gap: 0.5rem;
+    }
+}
